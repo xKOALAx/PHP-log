@@ -17,8 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Baza danych: `osadnicy`
---
+-- Baza danych:`Piekarnia`
 
 -- --------------------------------------------------------
 
@@ -31,27 +30,23 @@ CREATE TABLE IF NOT EXISTS `uzytkownicy` (
   `user` text COLLATE utf8_polish_ci NOT NULL,
   `pass` text COLLATE utf8_polish_ci NOT NULL,
   `email` text COLLATE utf8_polish_ci NOT NULL,
-  `drewno` int(11) NOT NULL,
-  `kamien` int(11) NOT NULL,
-  `zboze` int(11) NOT NULL,
-  `dnipremium` int(11) NOT NULL
 ) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
 --
 -- Zrzut danych tabeli `uzytkownicy`
 --
 
-INSERT INTO `uzytkownicy` (`id`, `user`, `pass`, `email`, `drewno`, `kamien`, `zboze`, `dnipremium`) VALUES
-(1, 'adam', 'qwerty', 'adam@gmail.com', 213, 5675, 342, 0),
-(2, 'marek', 'asdfg', 'marek@gmail.com', 324, 1123, 4325, 15),
-(3, 'anna', 'zxcvb', 'anna@gmail.com', 4536, 17, 120, 25),
-(4, 'andrzej', 'asdfg', 'andrzej@gmail.com', 5465, 132, 189, 0),
-(5, 'justyna', 'yuiop', 'justyna@gmail.com', 245, 890, 554, 0),
-(6, 'kasia', 'hjkkl', 'kasia@gmail.com', 267, 980, 109, 12),
-(7, 'beata', 'fgthj', 'beata@gmail.com', 565, 356, 447, 77),
-(8, 'jakub', 'ertyu', 'jakub@gmail.com', 2467, 557, 876, 0),
-(9, 'janusz', 'cvbnm', 'janusz@gmail.com', 65, 456, 2467, 0),
-(10, 'roman', 'dfghj', 'roman@gmail.com', 97, 226, 245, 23);
+INSERT INTO `uzytkownicy` (`id`, `user`, `pass`, `email`) VALUES
+(1, 'adam', 'qwerty', 'adam@gmail.com'),
+(2, 'marek', 'asdfg', 'marek@gmail.com'),
+(3, 'anna', 'zxcvb', 'anna@gmail.com'),
+(4, 'andrzej', 'asdfg', 'andrzej@gmail.com'),
+(5, 'justyna', 'yuiop', 'justyna@gmail.com'),
+(6, 'kasia', 'hjkkl', 'kasia@gmail.com'),
+(7, 'beata', 'fgthj', 'beata@gmail.com'),
+(8, 'jakub', 'ertyu', 'jakub@gmail.com'),
+(9, 'janusz', 'cvbnm', 'janusz@gmail.com'),
+(10, 'roman', 'dfghj', 'roman@gmail.com');
 
 --
 -- Indeksy dla zrzutów tabel
